@@ -2,8 +2,8 @@
 
 > [!INFO]
 > Requisitos para correr este programa:
-> - python
-> - docker/postgres (con la extension de pgvector)
+- python
+- docker/postgres (con la extension de pgvector)
 
 Este es un pequeño programa hecho con el proposito de demostrar las capacidades
 de langchain, un framework de python pensado para trabajar con _language models_.
