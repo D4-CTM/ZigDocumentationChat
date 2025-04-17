@@ -12,6 +12,9 @@ import psycopg2
 connection_string = "dbname=postgres host=localhost port=4884 user=postgres password=Postgres"
 model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
 
+path = "zigDoc.pdf"
+docName = "Zig documentation"
+
 
 def vectorize(docPath, docName):
     try:
@@ -73,7 +76,7 @@ def vectorize(docPath, docName):
         raise RuntimeError(f"Failed to transcribe video: {err}")
 
 
-vectorize("zigDoc.pdf", "Zig documentation")
+vectorize(path, docName)
 
 
 @tool
